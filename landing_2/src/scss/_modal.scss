@@ -10,10 +10,8 @@
 .modal {
 	position: fixed;
 	visibility: hidden;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	height: 100vh;
+	width: 100vw;
 	background-color: rgba($color-secondary-dark,0.2);
 	opacity: 0;
 	transition: all 0.6s;
@@ -21,13 +19,10 @@
 
 	&__box {
 		@include centring();
-		
+		@include flexbox(column, space-between, stretch);
 		box-shadow: 0 14px 28px rgba($color-secondary-dark,0.4), 
 					0 10px 10px rgba($color-secondary-dark,0.4);
-
 		position: absolute;
-
-		@include flexbox(column, space-between, stretch);
 		width: 500px;
 		border-radius: 5px;
 		background: $color-secondary-base;

@@ -6,7 +6,6 @@
 	background-attachment: fixed;
 	position: relative;
 	text-shadow: 2px 2px 2px $color-secondary-dark;
-	
 	@include flexbox(column, center, flex-start);
 
 	&__text {

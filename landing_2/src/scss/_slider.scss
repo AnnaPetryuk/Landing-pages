@@ -17,17 +17,14 @@
 
 	&__control {
 		position: absolute;
-		top: 50%;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+		@include flexbox(row, center, center);
 		width: 40px;
 		color: $color-secondary-base;
 		text-align: center;
 		opacity: 0.5;
 		height: 50px;
-		transform: translateY(-50%);
-		background: rgba($color-secondary-dark, .5);
+		@include ver-centring();
+		background: rgba($color-secondary-dark, 0.5);
 
 		&:hover,
 		&:focus {

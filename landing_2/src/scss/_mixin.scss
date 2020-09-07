@@ -23,10 +23,14 @@
 	font-weight: $weight;
 }
 
-@mixin sprite ($size) {
-	background-image: url(../../src/img/icon.png);
-	width: $size;
-	height: $size;
+@mixin hor-centring () {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin ver-centring () {
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 @mixin centring () {
