@@ -1,0 +1,73 @@
+.footer {
+	background: url(../../src/img/footer.jpg) center center no-repeat;
+	background-size: cover;
+	color: $color-secondary-lighter;
+
+	&__inner {
+		padding: 100px 0;
+		background-color: rgba($color-primary-darker, 0.7);
+	}
+
+	&__container {
+		@include flexbox(column, flex-start, center)
+	}
+
+	&__title {
+		font-size: $font-xxl;
+	}
+
+	&__info {
+		padding: 10px 0;
+		font-size: $font-s;
+		text-align: center;
+	}
+
+	&__question-form {
+		@include flexbox(row, space-between, center);
+		width: 100%;
+		margin: 30px 0;
+	}
+
+	&__field {
+		font-size: $font-s;
+		background-color: transparent;
+		padding: 7px 10px;
+		border: 1px solid $color-secondary-lighter;
+		width: 32%;
+	}
+
+	&__field::-moz-placeholder { 
+		color: $color-secondary-lighter; 
+	}
+	&__field::-webkit-input-placeholder { 
+		color: $color-secondary-lighter;
+	}
+
+	&__rights {
+		background-color: $color-primary-dark;
+		padding: 15px 0;
+		font-size: $font-xs;
+		@include flexbox(row, center, center);
+	}
+}
+
+@media screen and (max-width: 922px) {
+	.footer {
+		&__question-form {
+			@include flexbox(column, center, center);
+		}
+
+		&__field {
+			margin-bottom: 15px;
+			width: 60%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.footer {
+		&__field {
+			width: 90%;
+		}
+	}
+}

@@ -1,0 +1,87 @@
+#popup {
+	display: none;
+}
+
+#popup:checked ~ .modal {
+	visibility: visible;
+	opacity: 1;
+}
+
+.modal {
+	position: fixed;
+	visibility: hidden;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba($color-secondary-dark,0.2);
+	opacity: 0;
+	transition: all 0.6s;
+	z-index: 100;
+
+	&__box {
+		@include centring();
+		
+		box-shadow: 0 14px 28px rgba($color-secondary-dark,0.4), 
+					0 10px 10px rgba($color-secondary-dark,0.4);
+
+		position: absolute;
+
+		@include flexbox(column, space-between, stretch);
+		width: 500px;
+		border-radius: 5px;
+		background: $color-secondary-base;
+		height: 300px;
+	}
+
+	&__title {
+		text-align: center;
+		padding: 10px;
+		@include font-style($font-title-small);
+		@include color-opacity($color-secondary-dark, 0.8);
+	}
+
+	&__field {
+		padding: 10px;
+		@include font-style($font-text-small);
+		font-weight: 300;
+		margin: 10px;
+		border: 1px solid;
+		@include border-opacity($color-secondary-dark, 0.2);
+		@include color-opacity($color-secondary-dark, 1);
+	}
+
+	&__panel {
+		@include flexbox(row, flex-end, flex-end);
+		padding: 15px;
+	}
+	 
+	&__main {
+		@include flexbox(column, flex-start, center);
+		padding: 20px;
+	}
+
+	&__close-button {
+		padding: 5px 10px;
+		margin-left: 15px;
+		@include border-opacity($color-primary-dark, 0.2);
+		@include color-opacity($color-primary-dark, 1);
+
+		&:hover {
+			@include border-opacity($color-primary-dark, 1);
+			@include background-opacity($color-primary-dark, 0.2);
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.modal {
+		&__box {
+			width: 90%;
+			height: auto;
+		}
+		&__field {
+			width: 100%;;
+		}
+	}
+}

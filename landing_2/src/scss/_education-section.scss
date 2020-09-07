@@ -1,0 +1,37 @@
+.education-section {
+	padding: 8%;
+	position: relative;
+	background-color: $color-primary-dark;
+	@include flexbox(column, flex-start, flex-start);
+
+	&__title {
+		@include font-style($font-title-middle);
+	}
+
+	&__text {
+		@include font-style($font-text-middle, 500);
+	}
+
+	&__button-container {
+		@include flexbox(row, flex-start, center);
+	}
+
+	&__button {
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.education-section {
+		&__button-container {
+			@include flexbox(column, flex-start, stretch);
+			width: 100%;
+		}
+	
+		&__button {
+			margin-right: 0;
+			margin-bottom: 10px;
+			
+		}
+	}
+}

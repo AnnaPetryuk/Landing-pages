@@ -1,0 +1,30 @@
+.technologies-section {
+	padding: 8%;
+	position: relative;
+	background-color: $color-secondary-base;
+	@include flexbox(column, flex-start, flex-start);
+
+	&__title {
+		@include font-style($font-title-middle);
+		@include color-opacity($color-secondary-dark, 0.8);
+	}
+
+	&__text {
+		@include font-style($font-text-middle, 500);
+		@include color-opacity($color-secondary-dark, 0.8);
+	}
+
+	&__quotation {
+		@include color-opacity($color-secondary-dark, 0.8);
+	}
+
+	&__button {
+		@include border-opacity($color-primary-dark, 0.2);
+		@include color-opacity($color-primary-dark, 1);
+
+		&:hover {
+			@include border-opacity($color-primary-dark, 1);
+			@include background-opacity($color-primary-dark, 0.2);
+		}
+	}
+}

@@ -1,0 +1,46 @@
+@mixin flexbox ($fd, $jc, $ai, $fw: nowrap) {
+	display: flex;
+	flex-direction: $fd;
+	justify-content: $jc;
+	align-items: $ai;
+	flex-wrap: $fw;
+}
+
+@mixin background-opacity ($color, $opacity: 1) {
+    background: rgba($color, $opacity);
+}
+
+@mixin color-opacity ($color, $opacity: 1) {
+    color: rgba($color, $opacity);
+}
+
+@mixin border-opacity ($color, $opacity: 1) {
+    border-color: rgba($color, $opacity);
+}
+
+@mixin font-style ($size, $weight: 900) {
+	font-size: $size;
+	font-weight: $weight;
+}
+
+@mixin sprite ($size) {
+	background-image: url(../../src/img/icon.png);
+	width: $size;
+	height: $size;
+}
+
+@mixin hor-centring () {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin ver-centring () {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin centring () {
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}

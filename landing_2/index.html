@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Landing</title>
+		<link rel="stylesheet" href="./src/fonts/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="./public/css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<script src="./src/js/main.js"></script>
+		<script> </script>
+	</head>
+	<body>
+		<input id="popup" type="checkbox" unchecked/>
+
+		<div class="modal">
+			<div class="modal__box">
+				<div class="modal__title">
+					Оставить заявку
+				</div>
+				<div class="modal__main">
+					<input class="modal__field" type="text" name="user-name" placeholder="Имя"/>
+					<input class="modal__field" type="text" name="user-phone" placeholder="Телефон"/>
+				</div>
+				<div class="modal__panel">
+					<label for="popup" class="button modal__close-button">Отправить</label>
+					<label for="popup" class="button modal__close-button">Отмена</label>
+				</div>
+			</div>
+		</div>
+
+		<aside class="sidebar">
+			<ul class="sidebar__menu">
+				<li><a href="#data-section" class="sidebar__menu-item text-small">Данные</a></li>
+				<li><a href="#technologies-section" class="sidebar__menu-item text-small">Технологии</a></li>
+				<li><a href="#environment-section" class="sidebar__menu-item text-small">Енвайронмент</a></li>
+				<li><a href="#education-section" class="sidebar__menu-item text-small">Обучение</a></li>
+				<li><a href="#maintenance-section" class="sidebar__menu-item text-small">Сопровождение</a></li>
+				<li><a href="#news-section" class="sidebar__menu-item text-small">Новости</a></li>
+				<li><a href="#community-section" class="sidebar__menu-item text-small">Комьюнити</a></li>
+			</ul>
+		</aside>
+
+		<div class="container">
+			<div class="banner">
+				<a class="anchor" id="banner"></a>
+				<h1 class="title">Alpari</h1>
+				<h2 class="subtitle">
+					мультисервисная платформа для осознанного трейдинга
+				</h2>
+				<p class="banner__text text">
+					Мы ценим время, поэтому собираем все самое важное в одном месте
+				</p>
+			</div>
+			<div class="data-section">
+				<a class="anchor" id="data-section"></a>
+				<h2 class="data-section__title title">Alpari — провайдер качественных данных</h2>	
+				<div class="quotation">
+					Успех в торговле приходит от хорошего знания рынков и еще лучшего знания самих себя
+				</div>
+				<p class="data-section__text text">
+					Интересует волатильность ликвидных акций, обстановка на валютном рынке, 
+					объемы торгов криптоактивами? Мы решаем проблему миллиона открытых вкладок.
+					Теперь все данные топовых финансовых рынков в реальном времени вы можете найти,
+					воспользовавшись платформой Alpari. 
+					<br/><br/>
+					Но это не все. Мы заботимся о качестве предоставляемых даннных. Уникальная 
+					система множественных подтверждений позволяет мониторить массивный поток 
+					данных, который поступает к нам из разных уголков земного шара, и предоставлять 
+					нашим клиентам только проверенную информацию.
+					<br/><br/>
+					Оставьте заявку, и наш консультант подробно расскажет о качестве данных 
+					платформы Alpari.
+				</p>			
+				<label for="popup" class="button text-small">Оставить заявку</label>
+			</div>
+			<div class="technologies-section">
+				<a class="anchor" id="technologies-section"></a>
+				<h2 class="technologies-section__title title">Alpari — евангелист пробивных технологий</h2>	
+				<div class="technologies-section__quotation quotation">
+					Все, что у роботов получается быстрее и дешевле, в итоге начнут делать роботы
+				</div>
+				<p class="technologies-section__text text">
+					Мы не навязываем будущее, мы адаптируем его для профессионалов, внедряя самые передовые 
+					тренды финтеха и IT. Уже сейчас мы используем алгоритмы машинного обучения, включая 
+					нейросети, для прогнозирования движения рынков. Наши сигналы отличаются высокой точностью 
+					и радуют пользователей оптимальной доходностью.  
+				</p>	
+				<div class="slider">
+					<div class="slider__wrapper">
+					  	<div class="slider__item">
+							<div style="background-image: url(./src/img/slide-1.jpg);">&nbsp;</div>
+					  	</div>
+						<div class="slider__item">
+							<div style="background-image: url(./src/img/slide-2.jpg);">&nbsp;</div>
+					  	</div>
+					  	<div class="slider__item">
+							<div style="background-image: url(./src/img/slide-3.jpg);">&nbsp;</div>
+					  	</div>
+					  	<div class="slider__item">
+							<div style="background-image: url(./src/img/slide-4.png);">&nbsp;</div>
+					  	</div>
+					</div>
+					<a class="slider__control slider__control--left" href="#" role="button"></a>
+					<a class="slider__control slider__control--right" href="#" role="button"></a>
+				</div>	
+				<p class="technologies-section__text text">
+					Мы также стремимся максимально автоматизировать торговые практики и рутины трейдеров, 
+					ведь одна из основных задач платформы Alpari — вывести работу с финансовыми рынками на 
+					качественно новый уровень.
+					<br/><br/>
+					Свяжитесь с нашим консультантом, чтобы узнать больше об использовании новых технологий на платформе Alpari.
+				</p>
+				<label for="popup" class="technologies-section__button button text-small">Связаться</label>
+			</div>
+			<div class="environment-section">
+				<a class="anchor" id="environment-section"></a>
+				<h2 class="environment-section__title title">Alpari — удобный рабочий энвайромент</h2>	
+				<div class="quotation">
+					Бытие определеяет сознание
+				</div>
+				<p class="environment-section__text text">
+					При создании оптимальной рабочей среды для трейдеров мы руководствуемся двумя 
+					принципами: простотой и практичностью пользовательского опыта. Мы собрали в рабочем 
+					инструментарии платформы все самое необходимое для профессионального технического анализа. 
+					Пользователям удобно судить о поведении цены, когда все под рукой.
+					<br/><br/>
+					На Alpari вы также можете провести глубокий анализ своих портфелей. Система, оснащенная 
+					искусственным интеллектом, позволяет выявить слабые звенья и диверсифицировать риски.
+					<br/><br/>
+					<span class="text-underline">Интересно?</span>
+				</p>			
+				<label for="popup" class="button text-small">Регистрация</label>
+			</div>
+			<div class="education-section">
+				<a class="anchor" id="education-section"></a>
+				<h2 class="education-section__title title">Alpari — профессиональное обучение и сертификация</h2>	
+				<div class="quotation">
+					Тренировка не приводит к идеальным результатам, она приводит к стабильным результатам
+				</div>
+				<p class="education-section__text text">
+					Скальпинг, арбитраж, деривативы, короткие позиции, продажа волатильности... Хотите узнать, 
+					что это, или усовершенствовать свои навыки в разных торговых техниках и стратегиях? На 
+					платформе Alpari дейтсвуют постоянные онлайн-курсы и вебинары разного уровня сложности. 
+					Их ведут профессиональные трейдеры, у которых за плечами опыт увеличения прибыли в десятки 
+					и сотни раз. Кто как не они знают всю изнанку торговли финансовыми активами.
+					<br/><br/>
+					Но даже после прохождения обучающих курсов мы помогаем нашим пользователям, предоставляя 
+					дополнительные консультации. Мы также проводим сертификацию профессиональных трейдеров, 
+					открывая дорогу для престижного трудоустройства. 
+					<br/><br/>
+					Записаться на курс <span class="text-underline">“Быстрый старт”</span>, а также пройти экспресс-тестирование можно уже сейчас.
+					Интересно?
+				</p>	
+				<div class="education-section__button-container">
+					<label for="popup" class="education-section__button button text-small">Записаться на курс</label>
+					<label for="popup" class="education-section__button button text-small">Пройти тест</label>
+				</div>		
+			</div>
+			<div class="maintenance-section">
+				<a class="anchor" id="maintenance-section"></a>
+				<h2 class="maintenance-section__title title">Alpari — квалифицированное сопровождение VIP клиентов</h2>	
+				<div class="maintenance-section__quotation quotation">
+					Всякий раз, когда я вхожу в позицию, я знаю, где стоит мой стоп
+				</div>
+				<p class="maintenance-section__text text">
+					Трейдинг — высокодоходная инвестиционная практика с большими рисками. Допустим, у вас 
+					есть желание вступить в игру и получить сверхприбыль, но времени или навыков лично заниматься 
+					торгами не хватает. 
+					<br/><br/>
+					Мы предлагаем услуги профессиальных трейдеров и предоставляем возможности вступления в ряд 
+					закрытых хедж-фондов. Плаформа Alpari выструпает посредником для формирования доверительных 
+					партнерских отношений между всеми сторонами. 
+					<br/><br/>
+					Для получения более детальной информации об это заполните форму:
+				</p>			
+				<label for="popup" class="maintenance-section__button button text-small">Форма</label>
+			</div>
+			<div class="news-section">
+				<a class="anchor" id="news-section"></a>
+				<h2 class="news-section__title title">Alpari — фронт актуальных новостей</h2>	
+				<div class="quotation">
+					Цена начинает реагировать задолго до новостей, новости или плохие отчеты только усугубляют тренд
+				</div>
+				<p class="news-section__text text">
+					Мир информационно перегружен, но для успешного трейдинга нужно быть в курсе всего. Поэтому мы 
+					уделяем особое внимание новостному разделу Alpari. Для специального ежедневного дайджеста наши 
+					редакторы делают подборку экономических, финансовых и бизнес-новостей со всего мира. Обзоры, 
+					аналитика, мнения — выжимки главного в доступной форме и без воды. Вы узнаете о главных событиях 
+					дня первыми через канал, который удобен именно для вас.
+				</p>			
+				<div class="news-section__icon-container">
+					<a href="#" class="news-section__icon fa fa-facebook"></a>
+					<a href="#" class="news-section__icon fa fa-telegram"></a>
+					<a href="#" class="news-section__icon fa fa-envelope"></a>
+				</div>
+			</div>
+			<div class="community-section">
+				<a class="anchor" id="community-section"></a>
+				<h2 class="community-section__title title">Alpari — комьюнити трейдеров 3.0</h2>	
+				<div class="quotation">
+					Нас определяет круг общения
+				</div>
+				<p class="community-section__text text">
+					Качество профессионального общения серьезно влияет на наши достижения в работе. Поэтому Alpari 
+					целенаправленно развивает сообщество трейдеров таким образом, чтобы сами участники были 
+					заинтересованы в создании эффективного нетворкинга и обмене полезным контентом. У вас есть 
+					мнение, гипотезы, экспертиза и вы хотите ею делиться, формируя свою репутацию и зарабатывая 
+					рейтинги? Тогда вам у нас понравится. 
+					<br/><br/>
+					Комьюнити Alpari ждет вас!
+				</p>			
+				<label for="popup" class="button text-small">Присоединиться</label>
+			</div>
+			<div class="footer">
+				<span class="footer__item">&copy; Alpari. All rights reserved.</span>
+			</div>
+		</div>
+	</body>
+</html>

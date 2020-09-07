@@ -1,0 +1,127 @@
+body {
+	font-size: 16px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+	width: auto;
+	margin-left: 250px;
+}
+
+.anchor {
+	display: block;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+}
+
+.text-small {
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	@include font-style($font-text-smaller, 500);
+}
+
+.title {
+	@include color-opacity($color-secondary-base, 0.8);
+	@include font-style($font-title-large);
+}
+
+.text {
+	margin: 30px 0;
+	line-height: 2;
+	letter-spacing: 0.7px;
+	@include font-style($font-title-small);
+	@include color-opacity($color-secondary-base, 0.9);
+
+	transition: all 1s;
+}
+
+.subtitle {
+	@include color-opacity($color-secondary-base, 0.8);
+	@include font-style($font-title-middle);
+}
+
+.quotation {
+	margin-top: 20px;
+	height: 50px;
+	position: relative;
+	display: inline-block;
+	margin-left: 60px;
+	font-style: italic;
+	align-self: flex-end;
+	@include flexbox(row, flex-start, center);
+	@include font-style($font-text-middle, 500);
+	@include color-opacity($color-secondary-base, 0.4);
+
+	&:before {
+		content: '\201C';
+		position: absolute;
+		font-size: 50px;
+		left: -30px;
+	}
+	&:after{
+		content: '\201D';
+		position: absolute;
+		font-size: 50px;
+		right: -20px;
+	}
+}
+
+.text-underline {
+	border-bottom: dotted 1px;
+	cursor: pointer;
+	@include border-opacity($color-secondary-base, 0.4);	
+	@include color-opacity($color-secondary-base, 0.4);
+		
+	transition: all 1s;
+
+	&:hover {
+		border-bottom: none;
+		@include color-opacity($color-secondary-base, 1);
+	}
+}
+
+.button {
+	padding: 15px 30px;
+	border: 1px solid;
+	border-radius: 30px;
+	cursor: pointer;
+	@include border-opacity($color-secondary-base, 0.2);
+	@include color-opacity($color-secondary-base, 1);
+		
+	transition: all 1s;
+
+	&:hover {
+		border: 1px solid;
+		@include border-opacity($color-secondary-base, 1);
+		@include background-opacity($color-secondary-base, 0.2);
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.container {
+		margin-left: 0;
+		margin-top: 50px;
+	}
+}
+
+@media screen and (max-width: 870px) {
+	body {
+		font-size: 14px;
+	}
+
+	.container {
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.button {
+		width: 100%;
+		text-align: center;
+	}
+
+	.subtitle {
+		text-align: center;
+	}
+}

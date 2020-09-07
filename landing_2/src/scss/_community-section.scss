@@ -1,0 +1,14 @@
+.community-section {
+	padding: 8%;
+	position: relative;
+	background-color: $color-secondary-accent;
+	@include flexbox(column, flex-start, flex-start);
+
+	&__title {
+		@include font-style($font-title-middle);
+	}
+
+	&__text {
+		@include font-style($font-text-middle, 500);
+	}
+}

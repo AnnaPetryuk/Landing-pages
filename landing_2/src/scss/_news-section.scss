@@ -1,0 +1,31 @@
+.news-section {
+	padding: 8%;
+	position: relative;
+	background-color: $color-primary-dark;
+	@include flexbox(column, flex-start, flex-start);
+
+	&__title {
+		@include font-style($font-title-middle);
+	}
+
+	&__text {
+		@include font-style($font-text-middle, 500);
+	}
+
+	&__icon-container {
+		width: 100%;
+		@include flexbox(row, flex-end, center);
+	}
+
+	&__icon {
+		font-size: 20px;
+		margin-right: 20px;
+		@include color-opacity($color-secondary-base, 0.5);
+		
+		transition: all 1s;
+
+		&:hover {
+			@include color-opacity($color-secondary-base, 1);
+		}
+	}
+}

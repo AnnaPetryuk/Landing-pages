@@ -1,0 +1,27 @@
+.strategy {
+	color: $color-primary-base;
+	padding-top: 100px;
+
+	&__inner {
+		@include flexbox(column, flex-start, center);
+	}
+
+	&__item {
+		@include flexbox(column, flex-start, center);
+		margin: 10px 0;
+		padding: 0;
+	}
+
+	&__item-title {
+		font-size: $font-m;
+		text-transform: uppercase;
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	&__item-info {
+		text-align: center;
+		font-size: $font-xs;
+		color: $color-primary-light;
+	}
+}

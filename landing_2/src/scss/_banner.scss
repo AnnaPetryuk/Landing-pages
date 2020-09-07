@@ -1,0 +1,32 @@
+.banner {
+	height: 100vh;
+	padding: 8%;
+	background-image: url(../../src/img/banner.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	text-shadow: 2px 2px 2px $color-secondary-dark;
+	
+	@include flexbox(column, center, flex-start);
+
+	&__text {
+		font-style: italic;
+		font-weight: 400;
+		width: 75%;
+		@include color-opacity($color-secondary-base, 0.8);
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.banner {
+		padding: 15px;
+		@include flexbox(column, center, center);
+	
+		&__text {
+			margin-top: 50px;
+			text-align: center;
+			width: 100%;
+			@include color-opacity($color-secondary-base, 0.8);
+		}
+	}
+}

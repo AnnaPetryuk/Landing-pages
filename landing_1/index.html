@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Langing</title>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="./src/fonts/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	    <link rel="stylesheet" type="text/css" href="./public/css/main.css">
+		
+		<script src="./src/js/main.js"></script>
+		<script> </script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__inner row no-gutters justify-content-center align-items-center">
+				<div class="row col-11 col-sm-11 col-md-10 col-lg-10 col-xl-9 justify-content-between">
+					<div class="user-form order-2 order-sm-2 order-lg-1 col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+						<h3 class="user-form__title">
+							Начните зарабатывать
+						</h3>
+						<p class="user-form__info">
+							Чтобы начать и получить подробную информацию заполните форму
+						</p>
+						<input class="user-form__field" type="text" name="first-name" placeholder="Ваше имя"/>
+						<input class="user-form__field" type="text" name="phone" placeholder="Телефон"/>
+						<button class="user-form__button button">
+							Начать
+						</button>
+					</div>
+					<div class="main-topic order-1 order-sm-1 order-lg-2 col-12 col-sm-12 col-md-12 col-lg-7 col-xl-7">
+						<h1 class="main-topic__title">
+							Эффективная стратегия для пассивного дохода
+						</h1>
+						<p class="main-topic__info">
+							<span class="main-topic__info--highlighted">&nbsp;Проверенный и рабочий спрособ пассивного дохода в интернете.&nbsp;</span>
+						</p>
+						<p class="main-topic__info">
+							Информация в открытом доступе <span class="main-topic__info--emphasised">&nbsp;временно&nbsp;</span>, не упусти свой шанс.
+						</p>
+						<div class="timer" id="timer">
+							<div class="timer__days timer__section"></div>
+							<div class="timer__hours timer__section"></div>
+							<div class="timer__minutes timer__section"></div>
+							<div class="timer__seconds timer__section"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="strategy">
+			<div class="strategy__inner">
+				<h2 class="block-title">Преимущества стратегии</h2>
+				<div class="strategy__list row col-11 col-sm-11 col-md-10 col-lg-10 col-xl-9 justify-content-center">  <!-- row no-gutters justify-content-center -->
+					<div class="strategy__item col-12 col-sm-12 col-md-5 col-lg-3 col-xl-3">
+						<span class="fa fa-user-o fa-2x" aria-hidden="true"></span>
+						<h3 class="strategy__item-title">
+							Персональный ментор
+						</h3>
+						<p class="strategy__item-info">
+							Первые 3 месяца каждый партнер работает с персональным ментором и обучается стратегии
+						</p>
+					</div>
+					<div class="strategy__item col-12 col-sm-12 col-md-5 col-lg-3 col-xl-3">
+						<span class="fa fa-clock-o fa-2x" aria-hidden="true"></span>
+						<h3 class="strategy__item-title">
+							Пассивный метод
+						</h3>
+						<p class="strategy__item-info">
+							Стратегия не потребует много времени, достаточно выделить 30 минут в день
+						</p>
+					</div>
+					<div class="strategy__item col-12 col-sm-12 col-md-5 col-lg-3 col-xl-3">
+						<span class="fa fa-laptop fa-2x" aria-hidden="true"></span>
+						<h3 class="strategy__item-title">
+							Простота и доступность
+						</h3>
+						<p class="strategy__item-info">
+							Весь рабочий процесс прост и доступен. Все необходимые знания получишь во время обучения
+						</p>
+					</div>
+					<div class="strategy__item col-12 col-sm-12 col-md-5 col-lg-3 col-xl-3">
+						<span class="fa fa-money fa-2x" aria-hidden="true"></span>
+						<h3 class="strategy__item-title">
+							Быстрый результат
+						</h3>
+						<p class="strategy__item-info">
+							Первая прибыль уже через месяц после запуска стратегии
+						</p>
+					</div>
+				</div>
+			</div>		
+		</div>
+		<div class="mentor">
+			<div class="mentor__inner row col-11 col-sm-11 col-md-10 col-lg-10 col-xl-9 justify-content-center">
+				<div class="mentor__image-container order-2 order-lg-2 order-xl-1 col-12 col-sm-12 col-md-10 col-lg-5 col-xl-6">
+					<img class="mentor__image" src="./src/img/mentor.jpg">
+				</div>
+				<div class="mentor__info-container order-1 order-lg-1 order-xl-2 col-12 col-sm-12 col-md-10 col-lg-7 col-xl-6">
+					<h2 class="mentor__block-title block-title">Персональный наставник</h2>
+					<ul class="mentor__list fa-ul">
+						<li class="mentor__item">
+							<span class="fa-li fa fa-check-circle-o" aria-hidden="true"></span>
+							Индивидуальный план обучения
+						</li>
+						<li class="mentor__item">
+							<span class="fa-li fa fa-check-circle-o" aria-hidden="true"></span>
+							Разработка персональной стратегии развития
+						</li>
+						<li class="mentor__item">
+							<span class="fa-li fa fa-check-circle-o" aria-hidden="true"></span>
+							Практические занятия в процессе обучения
+						</li>
+						<li class="mentor__item">
+							<span class="fa-li fa fa-check-circle-o" aria-hidden="true"></span>
+							Профессиональный разбор ошибок и поиск решений</li>
+						<li class="mentor__item">
+							<span class="fa-li fa fa-check-circle-o" aria-hidden="true"></span>
+							Рекомендация по увеличению доходности
+						</li>
+						<li class="mentor__item">
+							<span class="fa-li fa fa-check-circle-o" aria-hidden="true"></span>
+							Онлайн общение с наставником
+						</li>
+						<li class="mentor__item">
+							<span class="fa-li fa fa-check-circle-o" aria-hidden="true"></span>
+							Постоянная поддержка на всех этапах
+						</li>
+					</ul>
+					<button class="mentor__button button">
+						Начать обучение
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="criterias">
+			<div class="criterias__inner row col-11 col-sm-11 col-md-10 col-lg-10 col-xl-9 justify-content-center">
+				<h2 class="block-title">Критерии выбора</h2>
+				<div class="criterias__conteiner row col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 justify-content-space-between">
+					<div class=" criterias__item">
+						<span class="criterias__icon fa fa-2x fa-lock" aria-hidden="true"></span>
+						<h4 class="criterias__subtitle">
+							Безопасность - это главное
+						</h4>
+						<p class="criterias__text">
+							Знать, что кошелек безопасен, очень важно, и этот вопрос нельзя игнорировать.
+							Вы всегдда должны проверять, какой протокол использовать на сайте. Также, стоит
+							узнать, используется ли двухфакторная система авторизации для доступа к вашему
+							кошельку. Это только некоторые важные моменты.
+						</p>
+					</div>
+					<div class=" criterias__item">
+						<span class="criterias__icon fa fa-2x fa-sitemap" aria-hidden="true"></span>
+						<h4 class="criterias__subtitle">
+							Партнерские программы
+						</h4>
+						<p class="criterias__text">
+							Важно знать, что партнерские программы не только выгодны и прибыльны, но и
+							максимально прозрачны. Возможность получения в любой момент актуальной статистики
+							и полный список ваших рефералов в личном кабинете. Все правила реферальной программы
+							должны быть доступны и максимально понятны.
+						</p>
+					</div>
+					<div class=" criterias__item">
+						<span class="criterias__icon fa fa-2x fa-star" aria-hidden="true"></span>
+						<h4 class="criterias__subtitle">
+							Авторитетность и доверие
+						</h4>
+						<p class="criterias__text">
+							Не рекомендуется выберать электронный кошелек, который только недавно создан.
+							За годы работы компания обязана заслужить репутацию безопасного сервиса для
+							хранения цифровых денег. Важно ознакомится также с отзывами и независимыми обзорами
+							о выбранном электронном кошелке.
+						</p>
+					</div>
+					<div class=" criterias__item">
+						<span class="criterias__icon fa fa-2x fa-percent" aria-hidden="true"></span>
+						<h4 class="criterias__subtitle">
+							Комиссия за вывод
+						</h4>
+						<p class="criterias__text">
+							Перед тем, как открыть электронный кошелек, и начать его использование, обязательно
+							прочтите все правила, прописанные в договоре-оферте. Даже если за возможность использования
+							услуг сервиса вам платить не придется, то чтобы вывести деньги на карту банка, коммисию внести
+							придется в любом случае.
+						</p>
+					</div>
+					<div class=" criterias__item">
+						<span class="criterias__icon fa fa-2x fa-sun-o" aria-hidden="true"></span>
+						<h4 class="criterias__subtitle">
+							Обратная связь
+						</h4>
+						<p class="criterias__text">
+							Как будущему клиенту сервиса, важно знать о моментах работы службы поддержки. Главные
+							критерии службы поддержки - скорость ответа, полезность полученного сообщения и,
+							конечно, качество общения. Также обязательно учитывайте какие предоставляются варианты
+							связи с технической поддержкой.
+						</p>
+					</div>
+					<div class="criterias__item">
+						<span class="criterias__icon fa fa-2x fa-mobile" aria-hidden="true"></span>
+						<h4 class="criterias__subtitle">
+							Легкость использования
+						</h4>
+						<p class="criterias__text">
+							Требуется учитывать насколько просто применять выбранный электронный кошелек. Удобство и
+							функциональность - это один из основных критериев, на который стоит обращать внимание при выборе.
+							Важно, чтобы функционал сервиса был интуитивно понятен и удобен в использовании.
+						</p>
+					</div>
+				</div>
+				<button class="button">Узнать больше</button>
+			</div>
+		</div>
+		<div class="reviews">
+			<div class="reviews__inner row col-11 col-sm-11 col-md-10 col-lg-10 col-xl-9 justify-content-center">
+				<h2 class="block-title">Отзывы успешных партнеров</h2>
+				<div class="reviews__container row justify-content-center">
+					<div class="reviews__item col-12 col-sm-12 col-md-9 col-lg-4 col-xl-4">
+						<p class="reviews__text">
+							Всего за пару месяцев моя жизнь переменилась полностью, я понял, что для хорошего
+							заработка необязательно много работать, нужно просто правильно работать. Главное
+							вовремя начать и не бояться!
+						</p>
+						<div class="reviews__author">
+							Даня Соловьев <br/>
+							<span class="reviews__duration">3 месяца с нами</span>
+						</div>
+					</div>
+					<div class="reviews__item col-12 col-sm-12 col-md-9 col-lg-4 col-xl-4">
+						<p class="reviews__text">
+							Я очень долго искала способ быстрого и стабильного заработка в интернете, ведь сегодняшняя
+							ситуация в стране не позволяет найти хорошую работу, с которой хватало бы на жизнь. 
+							Сейчас материальных проблем гораздо меньше.
+						</p>
+						<div class="reviews__author">
+							Анна Банина <br/>
+							<span class="reviews__duration">26 месяцев с нами</span>
+						</div>
+					</div>
+					<div class="reviews__item col-12 col-sm-12 col-md-9 col-lg-4 col-xl-4">
+						<p class="reviews__text">
+							Из за постоянных кредитов стал вопрос о дополнительном заработке. К счастью мне
+							предоставили возможность заработать. Научили, объяснили и теперь у меня есть
+							хороший пассивный доход. Спасибо.
+						</p>
+						<div class="reviews__author">
+							Игорь Ткачев <br/>
+							<span class="reviews__duration">18 месяцев с нами</span>
+						</div>
+					</div>
+				</div>
+				<button class="button">Стать командой</button>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__inner row no-gutters justify-content-center align-items-center">
+				<div class="footer__container row col-11 col-sm-11 col-md-10 col-lg-10 col-xl-9 justify-content-center">
+					<h2 class="footer__title">
+						Остались вопросы?
+					</h2>
+					<p class="footer__info">
+						Отправьте заявку и наши эксперты беслатно проконсультируют вас.
+						Сделайте первый шаг к успешному заработку сейчас!
+					</p>
+					<div class="footer__question-form">
+						<input class="footer__field" type="text" placeholder="Ваше имя"/>
+						<input class="footer__field" type="text" placeholder="Телефон"/>
+						<input class="footer__field" type="text" placeholder="Электронная почта"/>
+					</div>
+					<button class="button">Отправить</button>
+				</div>
+			</div>
+			<div class="footer__rights">
+				<p class="col-11 col-sm-11 col-md-10 col-lg-10 col-xl-9">&copy; 2019 All rights reserved</p>
+			</div>
+		</footer>
+		<!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>

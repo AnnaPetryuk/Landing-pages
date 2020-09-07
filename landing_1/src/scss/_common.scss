@@ -1,0 +1,30 @@
+html {
+	font-family: 'Roboto', sans-serif;
+}
+
+.button {
+	font-size: $font-s;
+	background-color: $color-accent-light;
+	color: $color-secondary-lighter;
+	text-transform: uppercase;
+	padding: 7px 20px;
+	margin-top: 20px;
+	font-weight: 500;
+}
+
+.block-title {
+	font-size: $font-xl;
+	text-transform: uppercase;
+	position: relative;
+	margin-bottom: 70px;
+
+	&:after {
+		content: '';
+		position: absolute;
+		background-color: $color-accent-base;
+		height: 2px;
+		width: 45px;
+		@include hor-centring;
+		top: 200%;
+	}
+}

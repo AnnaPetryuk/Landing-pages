@@ -1,0 +1,128 @@
+.header {
+	background: url(../../src/img/header.jpg) center center no-repeat;
+	background-size: cover;
+
+	&__inner {
+		padding: 100px 0;
+		background-color: rgba($color-primary-darker, 0.7);
+	}
+}
+
+.user-form {
+	background-color: $color-secondary-lighter;
+	padding: 20px 10px;
+	@include flexbox(column, center, center);
+	color: $color-primary-base;
+	font-size: $font-xs;
+
+	&__title {
+		text-transform: uppercase;
+		font-size: $font-m;
+	}
+
+	&__info {
+		text-align: center;
+		padding: 10px 0;
+	}
+
+	&__field {
+		background-color: $color-secondary-lighter;
+		border-radius: 5px;
+		padding: 7px 10px;
+		border: 1px solid $color-secondary-dark;
+		margin: 5px 0;
+		width: 95%;
+	}
+
+	&__button {
+		border-radius: 5px;
+	}
+}
+
+.main-topic {
+	color: $color-secondary-lighter;
+	
+	&__title {
+		text-transform: uppercase;
+		font-size: $font-xxl;	
+		font-weight: 100;
+		line-height: 1.5;
+		letter-spacing: 2px;
+	}
+
+	&__info {
+		font-size: $font-l;
+		padding: 15px 0;
+	}
+
+	&__info--highlighted {
+		background-color: $color-accent-dark;
+	}
+
+	&__info--emphasised {
+		background-color: $color-accent-light;
+	}
+}
+
+.timer {
+	@include flexbox(row, center, center);
+
+	&__section {
+		font-size: $font-xxxl;
+		margin: 0 30px;
+		font-weight: 100;
+		position: relative;
+		vertical-align: text-top;
+		width: 35px;
+		text-align: center;
+
+		&:not(:last-child):after {
+			content: ':';
+			position: absolute;
+			line-height: 1;
+			right: -23px;
+			@include ver-centring;
+		}
+
+		&:before {
+			font-size: $font-xxs;
+			position: absolute;
+			@include hor-centring;
+			bottom: -9px;
+			text-transform: uppercase;
+		}
+
+		&:nth-child(1):before {
+			content: 'days';
+		}
+
+		&:nth-child(2):before {
+			content: 'hours';
+		}
+
+		&:nth-child(3):before {
+			content: 'minutes';
+		}
+
+		&:nth-child(4):before {
+			content: 'seconds';
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.timer {
+		margin-bottom: 30px;
+	}
+	.main-topic {
+		@include flexbox(column, center, center);
+
+		&__title {
+			text-align: center;
+		}
+
+		&__info {
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+.footer {
+	padding: 4%;
+	background-color: $color-primary-darker;
+	@include font-style($font-text-small, 500);
+	
+	@include flexbox(row, flex-start, center);
+
+	&__item {
+		@include color-opacity($color-secondary-base, 0.4);
+		padding: 0 15px;
+	}
+}
+
+@media screen and (max-width: 728px) {
+	.footer {
+		@include flexbox(column, flex-start, flex-start);
+
+		&__item {
+			padding: 5px 0;
+			&:not(:last-child) {
+				border-right: none;
+			}
+		}
+	}
+}
