@@ -39,6 +39,6 @@ window.addEventListener('load', function() {
         var timeinterval = setInterval(updateClock, 1000);
     }
         
-    var deadline = '09/10/2020';
+    var deadline = '09/11/2020';
     initializeClock('timer', deadline);
 });
